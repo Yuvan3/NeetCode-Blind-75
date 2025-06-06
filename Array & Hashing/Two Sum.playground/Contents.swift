@@ -1,6 +1,4 @@
-//: [Previous](@previous)
-
-import Foundation
+import UIKit
 
 // https://leetcode.com/problems/two-sum/description/
 
@@ -38,7 +36,7 @@ import Foundation
 //            }
 //        }
 //    }
-//    
+//
 //    return []
 //}
 
@@ -63,6 +61,3 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 let nums = [2, 7, 11, 15]
 let target = 18
 twoSum(nums, target)
-
-
-//: [Next](@next)

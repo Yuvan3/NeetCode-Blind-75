@@ -52,7 +52,6 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         }
         
         numIndexMap[num] = i
-        print(numIndexMap)
     }
     
     return []

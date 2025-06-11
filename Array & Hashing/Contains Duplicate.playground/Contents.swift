@@ -8,6 +8,7 @@ import UIKit
  Example 1:
 
  Input: nums = [1,2,3,1]
+ set = 1,2,3
  Output: true
  
  Example 2:
@@ -22,19 +23,21 @@ import UIKit
  */
 
 //MARK: - Using Dict -> Time & Space Complexity O(n)
-//func containsDuplicate(_ nums: [Int]) -> Bool {
-//    var elementCount: [Int: Int] = [:]
-//    
-//    for num in nums {
-//        if let _ = elementCount[num] {
-//            return true
-//        } else {
-//            elementCount[num] = 1
-//        }
-//    }
-//    
-//    return false
-//}
+func containsDuplicate(_ nums: [Int]) -> Bool {
+    var elementCount: [Int: Int] = [:]
+    
+    // [Key: Value] -> [Num: 1]
+    
+    for num in nums {
+        if let _ = elementCount[num] {
+            return true
+        } else {
+            elementCount[num] = 1
+        }
+    }
+    
+    return false
+}
 
 //MARK: - Using Set -> Time & Space Complexity O(n)
 func containsDuplicate(_ nums: [Int]) -> Bool {

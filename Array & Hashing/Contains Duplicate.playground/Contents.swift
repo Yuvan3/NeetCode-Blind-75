@@ -40,19 +40,19 @@ func containsDuplicate(_ nums: [Int]) -> Bool {
 }
 
 //MARK: - Using Set -> Time & Space Complexity O(n)
-func containsDuplicate(_ nums: [Int]) -> Bool {
-    var seen = Set<Int>()
-    
-    for num in nums {
-        if seen.contains(num) {
-            return true
-        } else {
-            seen.insert(num)
-        }
-    }
-    
-    return false
-}
+//func containsDuplicate(_ nums: [Int]) -> Bool {
+//    var seen = Set<Int>()
+//    
+//    for num in nums {
+//        if seen.contains(num) {
+//            return true
+//        } else {
+//            seen.insert(num)
+//        }
+//    }
+//    
+//    return false
+//}
 
 
 let input = [1,2,3,1]
